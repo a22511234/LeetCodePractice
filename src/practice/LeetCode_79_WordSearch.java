@@ -71,8 +71,10 @@ public class LeetCode_79_WordSearch {
 			return false;
 		}
 		visited[i][j] = true;
-		if (search2(board, word, i + 1, j, idx + 1, visited) || search2(board, word, i, j + 1, idx + 1, visited)
-				|| search2(board, word, i - 1, j, idx + 1, visited) || search2(board, word, i, j - 1, idx + 1, visited)) {
+		if (search2(board, word, i + 1, j, idx + 1, visited) || 
+				search2(board, word, i, j + 1, idx + 1, visited)
+				|| search2(board, word, i - 1, j, idx + 1, visited)
+				|| search2(board, word, i, j - 1, idx + 1, visited)) {
 			return true;
 		}
 		visited[i][j] = false;

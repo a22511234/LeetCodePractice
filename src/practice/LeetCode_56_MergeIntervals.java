@@ -34,7 +34,6 @@ public class LeetCode_56_MergeIntervals {
 		if (n == 1 || intervals == null) {
 			return ans.toArray(new int[ans.size()][]);
 		}
-		int[][] interval = { { 1, 4 }, { 0, 4 } };
 		for (; index < n;) {
 			int left[] = ans.get(index);
 			int right[] = ans.get(index + 1);
